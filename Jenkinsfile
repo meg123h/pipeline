@@ -1,19 +1,10 @@
 pipeline {
-   agent any
-   stages {
-       stage('Build Code') {
-           steps {
-               sh """
-               echo "Building Artifact"
-               """
-           }
-       }
-      stage('Deploy Code') {
-          steps {
-               sh """
-               echo "Deploying Code"
-               """
-          }
-      }
-   }
+    agent any
+    stages {
+        stage('Welcome Step') {
+            steps { 
+                echo 'Welcome to Test practise'
+            }
+        }
+    }
 }
